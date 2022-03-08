@@ -12,8 +12,8 @@
 
 ## 👀 Sobre
 
-Construção de um clone do spotify, para fazer automação de testes.
-link do site: http://parodify.herokuapp.com/users/sign_up
+<h1> Construção de um clone do spotify, para fazer automação de testes </h1>
+<h1> Link do site: http://parodify.herokuapp.com/users/sign_up </h1>
 
 ---
 
