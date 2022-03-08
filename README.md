@@ -13,6 +13,7 @@
 ## 👀 Sobre
 
 Construção de um clone do spotify, para fazer automação de testes.
+link do site: http://parodify.herokuapp.com/users/sign_up
 
 ---
 
