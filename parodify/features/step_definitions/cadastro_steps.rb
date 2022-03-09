@@ -8,9 +8,9 @@ Quando('submete o meu cadastro com:') do |table|
     find("#user_password").set user[:senha]
     find("#user_password_confirmation").set user[:senha_confirma]
 
-    sleep 5 #temporario
+    click_on "Cadastrar"  
 end                                                                           
                                                                                    
 Então('devo ser redirecionado para a área logada.') do                        
-    pending # Write code here that turns the phrase above into concrete actions 
+    expect(page).to have_css ".dashboard" 
 end                                                                           

@@ -9,7 +9,7 @@ Funcionalidade: Cadastro de Usuários
 Cenário: Cadastro
     Dado que acesso a página de cadastro
     Quando submete o meu cadastro com:
-        |email              | pedro.paula@viannasempre.com.br |
+        |email              | pedro.paulaqa@manilator.com |
         |senha              | 123456 |
         |senha_confirma     | 123456 |
     Então devo ser redirecionado para a área logada.
