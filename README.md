@@ -24,7 +24,7 @@ Foram utilizadas as seguintes tecnologias:
 - [Ruby](https://www.jetbrains.com/ruby/)
 - [Capybara](https://github.com/teamcapybara/capybara)
 - [Cucumber](https://cucumber.io/)
-- 
+
 ---
 
 ## Como baixar o projeto 
