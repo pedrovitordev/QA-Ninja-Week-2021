@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "0de3bc11-4606-4e41-af4d-9f5e3e89e938",
+		"name": "Excluir email cadastrado pra poder cadastrar novamente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://parodify.herokuapp.com/helpers?email=pedro.paulaqa@manilator.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://parodify.herokuapp.com/helpers?email=pedro.paulaqa@manilator.com",
+					"protocol": "http",
+					"host": [
+						"parodify",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"helpers"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "pedro.paulaqa@manilator.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
