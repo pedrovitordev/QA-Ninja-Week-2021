@@ -16,4 +16,12 @@ end
                                                                                    
 Então('devo ser redirecionado para a área logada.') do                        
     expect(page).to have_css ".dashboard" 
-end                                                                           
+end                                               
+
+Quando('submeto meu cadastro sem o email.') do
+    pending # Write code here that turns the phrase above into concrete actions
+end
+  
+Então('devo ver Oops ! Informe seu Email.') do
+    pending # Write code here that turns the phrase above into concrete actions
+end
