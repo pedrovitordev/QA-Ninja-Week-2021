@@ -34,4 +34,15 @@ end
     alert = find(".message p")
     expect(alert.text).to eql 'Oops! Informe seu email.'
 end
+
+#teste3 (reaproveita o Dado)
+Quando('submeto meu cadastro sem a senha') do
+    find("#user_email").set 'GabrielaAmaDurama@gmail.com'                               
   
+    click_on "Cadastrar"   
+end                                                                          
+                                                                               
+  Então('devo ver Oops ! Informe sua senha') do                                
+    alert = find(".message p")
+    expect(alert.text).to eql 'Oops! Informe sua senha.'
+end                                                                          

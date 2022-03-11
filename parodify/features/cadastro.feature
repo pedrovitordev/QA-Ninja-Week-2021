@@ -14,19 +14,20 @@ Cenário: Cadastro
         |senha_confirma     | 123456 |
     Então devo ser redirecionado para a área logada.
 
-@temp
+
 Cenário: Email não informado
     Dado que acesso a página de cadastro
     Quando submeto meu cadastro sem o email
     Então devo ver Oops ! Informe seu Email 
 
+@temp
 Cenário: Senha não informada
-    Dado que o acesso a página de cadastro
+    Dado que acesso a página de cadastro
     Quando submeto meu cadastro sem a senha
     Então devo ver Oops ! Informe sua senha
 
 Cenário: Senha divergente
-    Dado que o acesso a página de cadastro
+    Dado que acesso a página de cadastro
     Quando submeto meu cadastro com senha divergente.
     Então devo ver Oops ! Senhas não são iguais
 
