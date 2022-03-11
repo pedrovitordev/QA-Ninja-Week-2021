@@ -9,39 +9,23 @@ Funcionalidade: Cadastro de Usuários
 Cenário: Cadastro
     Dado que acesso a página de cadastro
     Quando submete o meu cadastro com:
-        |email              | pedro.paulaqa@manilator.com |
-        |senha              | 123456 |
-        |senha_confirma     | 123456 |
-    Então devo ser redirecionado para a área logada.
+        | email              | pedro.paulaqa@manilator.com |
+        | senha              | 123456 |
+        | senha_confirma     | 123456 |
+    Então devo ser redirecionado para a área logada
 
-Cenario: Email não informado
+Esquema do Cenário: Tentativa de Cadastro
+
     Dado que acesso a página de cadastro
     Quando submete o meu cadastro com:
-        |email              |        |
-        |senha              | 123456 |
-        |senha_confirma     | 123456 |
-    Então devo ver a mensagem: "Oops! Informe seu email."
+        | email              |    <email>             |
+        | senha              |    <senha>             |
+        | senha_confirma     |    <confirma_senha>    |
+    Então devo ver a mensagem: "<mensagem_saida>"
 
-Cenario:Senha não informado
-    Dado que acesso a página de cadastro
-    Quando submete o meu cadastro com:
-        |email              | pedro.paulaqa@manilator.com |
-        |senha              |                             |
-        |senha_confirma     |                             |
-    Então devo ver a mensagem: "Oops! Informe sua senha."
-
-Cenario:Senha divergente
-    Dado que acesso a página de cadastro
-    Quando submete o meu cadastro com:
-        |email              | pedro.paulaqa@manilator.com |
-        |senha              |    pwd123                   |
-        |senha_confirma     |    asd544                   |
-    Então devo ver a mensagem: "Oops! Senhas não são iguais."
-
-Cenario:Nenhum campo preenchido
-    Dado que acesso a página de cadastro
-    Quando submete o meu cadastro com:
-        |email              |                             |
-        |senha              |                             |
-        |senha_confirma     |                             |
-    Então devo ver a mensagem: "Oops! Informe seu email e sua senha."
+    Exemplos:
+    | email                       | senha  | confirma_senha | mensagem_saida                       |
+    |                             | pwd123 | pwd123         | Oops! Informe seu email.             |
+    | pedro.paulaqa@manilator.com |        |                | Oops! Informe sua senha.             |
+    | pedro.paulaqa@manilator.com | pwd123 | abs456         | Oops! Senhas não são iguais.         | 
+    |                             |        |                | Oops! Informe seu email e sua senha. |   
