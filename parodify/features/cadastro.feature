@@ -14,24 +14,34 @@ Cenário: Cadastro
         |senha_confirma     | 123456 |
     Então devo ser redirecionado para a área logada.
 
-
-Cenário: Email não informado
+Cenario: Email não informado
     Dado que acesso a página de cadastro
-    Quando submeto meu cadastro sem o email
-    Então devo ver Oops ! Informe seu Email 
+    Quando submete o meu cadastro com:
+        |email              |        |
+        |senha              | 123456 |
+        |senha_confirma     | 123456 |
+    Então devo ver a mensagem: "Oops! Informe seu email."
 
-@temp
-Cenário: Senha não informada
+Cenario:Senha não informado
     Dado que acesso a página de cadastro
-    Quando submeto meu cadastro sem a senha
-    Então devo ver Oops ! Informe sua senha
+    Quando submete o meu cadastro com:
+        |email              | pedro.paulaqa@manilator.com |
+        |senha              |                             |
+        |senha_confirma     |                             |
+    Então devo ver a mensagem: "Oops! Informe sua senha."
 
-Cenário: Senha divergente
+Cenario:Senha divergente
     Dado que acesso a página de cadastro
-    Quando submeto meu cadastro com senha divergente.
-    Então devo ver Oops ! Senhas não são iguais
+    Quando submete o meu cadastro com:
+        |email              | pedro.paulaqa@manilator.com |
+        |senha              |    pwd123                   |
+        |senha_confirma     |    asd544                   |
+    Então devo ver a mensagem: "Oops! Senhas não são iguais."
 
-Cenário: Nenhum campo preenchido
+Cenario:Nenhum campo preenchido
     Dado que acesso a página de cadastro
-    Quando submeto meu cadastro sem preencher os campos
-    Então devo ver Opps! Informe seu email e sua senha
+    Quando submete o meu cadastro com:
+        |email              |                             |
+        |senha              |                             |
+        |senha_confirma     |                             |
+    Então devo ver a mensagem: "Oops! Informe seu email e sua senha."

@@ -21,28 +21,31 @@ Então('devo ser redirecionado para a área logada.') do
     expect(page).to have_css ".dashboard" 
 end                                               
 
-#teste2 (reaproveita o Dado)
-Quando('submeto meu cadastro sem o email') do
-
-    find("#user_password").set "pwd123"
-    find("#user_password_confirmation").set "pwd123"
-
-    click_on "Cadastrar" 
-end
-  
-    Então('devo ver Oops ! Informe seu Email') do
+#Uma linha ele automatizou tudo
+Então('devo ver a mensagem: {string}') do |expect_message|
     alert = find(".message p")
-    expect(alert.text).to eql 'Oops! Informe seu email.'
+    expect(alert.text). to eql expect_message
 end
 
-#teste3 (reaproveita o Dado)
-Quando('submeto meu cadastro sem a senha') do
-    find("#user_email").set 'GabrielaAmaDurama@gmail.com'                               
-  
-    click_on "Cadastrar"   
-end                                                                          
-                                                                               
-  Então('devo ver Oops ! Informe sua senha') do                                
-    alert = find(".message p")
-    expect(alert.text).to eql 'Oops! Informe sua senha.'
-end                                                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
