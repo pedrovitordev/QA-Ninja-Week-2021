@@ -6,5 +6,5 @@ require_relative "helpers"
 World(Helpers)
 
 Capybara.configure do |config|
-    config.default_driver =:selenium_chrome
-end    
+  config.default_driver = :selenium_chrome
+end
