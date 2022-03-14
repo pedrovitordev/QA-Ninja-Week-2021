@@ -29,3 +29,8 @@ Funcionalidade: Cadastro de Usuários
             | pedro.paulaqa@manilator.com |        |                | Oops! Informe sua senha.             |
             | pedro.paulaqa@manilator.com | pwd123 | abs456         | Oops! Senhas não são iguais.         |
             |                             |        |                | Oops! Informe seu email e sua senha. |
+
+    @temp
+    Cenario: Validação do campo email
+        Quando acesso a página de cadastro  
+        Então deve exibir o seguinte css "input[type=email]"
