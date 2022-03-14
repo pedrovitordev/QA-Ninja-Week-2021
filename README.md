@@ -27,6 +27,8 @@ Foram utilizadas as seguintes tecnologias:
 
 ---
 
+<img src="http://192.168.56.1:59605/index.html"></img>
+
 ## Como baixar o projeto 
 
 Siga os seguintes passos para baixar o arquivo:
