@@ -5,6 +5,7 @@ Funcionalidade: Login
         Quando acessar o sistema com meu email e senha
     Para que eu possa ter acesso as playlists do Parodify
 
+    @smoke
     Cenario: Login do Usuários
 
         Dado que acesso a página login
