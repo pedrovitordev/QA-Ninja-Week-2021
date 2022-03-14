@@ -8,7 +8,8 @@
 # Indice
 - [Sobre](#-sobre)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- [Como baixar o projeto](#como-baixar-o-projeto)
+- [Relatorio dos testes rodando no allure](#-relatorio-dos-testes-rodando-no-allure)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
 
 ## 👀 Sobre
 
@@ -24,6 +25,12 @@ Foram utilizadas as seguintes tecnologias:
 - [Ruby](https://www.jetbrains.com/ruby/)
 - [Capybara](https://github.com/teamcapybara/capybara)
 - [Cucumber](https://cucumber.io/)
+
+---
+
+## ✅ Relatorio dos testes rodando no allure
+
+link: https://imgur.com/Cc2zQBy
 
 ---
 
