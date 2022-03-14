@@ -8,8 +8,8 @@
 # Indice
 - [Sobre](#-sobre)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- [Relatorio dos testes rodando no allure](#relatorio-dos-testes-rodando-no-allure)
-- [Como baixar o projeto](#como-baixar-o-projeto)
+- [Relatorio dos testes rodando no allure](#-relatorio-dos-testes-rodando-no-allure)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
 
 ## 👀 Sobre
 
