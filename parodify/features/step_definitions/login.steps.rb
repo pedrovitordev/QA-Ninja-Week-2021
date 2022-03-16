@@ -1,12 +1,9 @@
 Dado("que acesso a página login") do
-  visit "/"
-  click_on "Login"
+  goto_login
 end
 
 Quando("submeto minhas credenciais com: {string} e {string}") do |email, password|
-  find("#user_email").set email
-  find("#user_password").set password
-  click_on "Log in"
+  login_with(email, password)
 end
 
 Então("devo ser redirecionado para a área logada") do
