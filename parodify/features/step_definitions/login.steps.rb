@@ -1,5 +1,5 @@
 Dado("que acesso a página login") do
-  visit "http://parodify.herokuapp.com"
+  visit "/"
   click_on "Login"
 end
 

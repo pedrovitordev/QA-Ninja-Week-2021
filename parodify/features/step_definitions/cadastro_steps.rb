@@ -1,6 +1,6 @@
 #teste1
 Dado("que acesso a página de cadastro") do
-  visit "http://parodify.herokuapp.com"
+  visit "/"
   click_on "EXPERIMENTE AGORA"
 end
 
