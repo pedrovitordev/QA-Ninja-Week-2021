@@ -22,7 +22,7 @@ Link do site: http://parodify.herokuapp.com/users/sign_up
 
 Foram utilizadas as seguintes tecnologias:
 
-- [Ruby](https://www.jetbrains.com/ruby/)
+- [Ruby](https://www.ruby-lang.org/pt/)
 - [Capybara](https://github.com/teamcapybara/capybara)
 - [Cucumber](https://cucumber.io/)
 
